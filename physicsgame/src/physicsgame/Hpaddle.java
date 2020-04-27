@@ -24,9 +24,9 @@ public class Hpaddle implements Paddles {
         upAccel = false; downAccel = false;
         y = 210; yVel=0;
         if (player == 1){
-            x=20; 
+            x=140; 
         } else {
-            x=900;
+            x=850;
         }
         
     }
@@ -42,7 +42,7 @@ public class Hpaddle implements Paddles {
         
     }
 
-    @Override
+   
     public void move() {
         if (upAccel){
             yVel -= 1;
@@ -64,6 +64,7 @@ public class Hpaddle implements Paddles {
         
     }
 
+    
     @Override
     public int getY() {
        return (int)y;

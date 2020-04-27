@@ -52,7 +52,7 @@ public class Tennis extends Applet implements Runnable, KeyListener {
         
         if(b1.getX() < -10 || b1.getX()>1010 ){
             gfx.setColor(Color.GREEN);
-            gfx.drawString("U is a nigga", 500, 250);
+            gfx.drawString("uh oh", 500, 250);
         }
         
         p1.draw(gfx);
@@ -71,8 +71,7 @@ public class Tennis extends Applet implements Runnable, KeyListener {
     
     public void run(){
         for (;;){
-            b1.checkPaddleCollision(p1);
-            b1.checkPaddleCollision(p2);
+            b1.checkPaddleCollision(p1, p2);
             p1.move();
             b1.move();
             

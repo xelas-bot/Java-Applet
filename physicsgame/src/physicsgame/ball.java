@@ -20,21 +20,21 @@ public ball(){
     x = 500;
     y=250;
     
-    xVel=1;
-            yVel=1;
+    xVel=2;
+    yVel=2;
 }
 
-public void checkPaddleCollision(Hpaddle g){
-    if (x <= 50){
+public void checkPaddleCollision(Hpaddle g, Hpaddle h){
+    if (x <= 165){
         if (y >=g.getY() && y <= g.getY()+80){
             xVel = -xVel;
         }
-    } else if(x >= 800){
-        if (y >=g.getY() && y <= g.getY()+80){
+    } else if(x >= 840){
+        if (y >=h.getY() && y <= h.getY()+80){
             xVel = -xVel;
         }
     }
-    
+     
     
     
     
